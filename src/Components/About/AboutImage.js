@@ -5,15 +5,30 @@ import AboutImageNode from "./AboutImageNode";
 function AboutImage() {
   return (
     <div className="w-2/5 relative h-80 ">
-      <AboutImageNode top="0" left="0" z="0" shadow="green" image={Image1} />
+      <AboutImageNode
+        top="0"
+        left="0"
+        z="0"
+        shadow="green"
+        image={Image1}
+        name={"Node"}
+      />
       <AboutImageNode
         bottom="0"
         left="20%"
         z="4"
         shadow="orange"
         image={Image2}
+        name={"Hub"}
       />
-      <AboutImageNode right="0" top="10%" z="2" shadow="cyan" image={Image3} />
+      <AboutImageNode
+        right="0"
+        top="10%"
+        z="2"
+        shadow="cyan"
+        image={Image3}
+        name={"Node Side"}
+      />
       {/* <img
         src={Image1}
         className="absolute w-3/5 h-3/5 top-0 left-0 shadow-2xl border-black border-[.1px] shadow-green-200  z-[0] "
