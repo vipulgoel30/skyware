@@ -29,14 +29,14 @@ function HeroSection() {
               <HeroSectionTagLine />
             </div>
 
-            <p className="text-black leading-loose tracking-wider  text-xl font-semibold break-words">
-              With <TagsMain data="AI" color="red"></TagsMain> and{" "}
-              <TagsMain data="IoT" color="red" />:
+            <p className="text-black leading-loose tracking-wider  text-xl font-semibold break-words monster">
+              With <TagsMain data="AI" color="#e86e2c"></TagsMain> and{" "}
+              <TagsMain data="IoT" color="#e86e2c" />:
               <TagsElement data="Predict Shelf-life" color="seagreen" />,
-              <TagsElement data="detect spoilage" color="aqua" />,
+              <TagsElement data="detect spoilage" color="#2b5ced" />,
               <TagsElement data=" Identify health status " color="slate" />
               and get the best{" "}
-              <TagsElement data="scientific treatment " color="green" />
+              <TagsElement data="scientific treatment " color="#db5d58" />
               possible for grains stored in your{" "}
               <TagsElement data="agri-warehouses." color="orange" />
             </p>
