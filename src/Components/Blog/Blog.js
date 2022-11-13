@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import selectedImg from '../../selected.svg'
 
 export default function Blog() {
     const allTags = ['All', 'Tag 1', 'Tag 2', 'Tag 3', 'Tag 4']
@@ -67,7 +66,7 @@ export default function Blog() {
             {allTags.map(tag => {
                 const selected = tag === selectedTag
                 return <li key={tag} className={`relative text-xl rounded-3xl cursor-pointer transition-all duration-300 px-5 py-1.5 font-medium text-white border-2 border-green-400 bg-green-400 ${selected ? 'pl-14' : 'hover:text-green-400 hover:bg-white'}`} onClick={() => setSelectedTag(tag)}>
-                    {selected && <img className='absolute top-1/2 -translate-y-1/2 left-4 h-2/3 aspect-square' alt="" src={selectedImg} />}
+                    {selected && <img className='absolute top-1/2 -translate-y-1/2 left-4 h-2/3 aspect-square' alt="" src='/images/selected.svg' />}
                     {tag}
                 </li>
             })}
@@ -92,7 +91,7 @@ export default function Blog() {
                     </div>
                 </a>
                 <ul className='gap-x-3 gap-y-2 flex flex-wrap'>
-                    {tags.map(tag => <li className='font-semibold text-sm text-blue-600 bg-blue-200 inline rounded-full px-4 py-1 whitespace-nowrap'>{tag}</li>)}
+                    {tags.map(tag => <li key={tag} className='font-semibold text-sm text-blue-600 bg-blue-200 inline rounded-full px-4 py-1 whitespace-nowrap'>{tag}</li>)}
                 </ul>
                 <div className="font-semibold text-2xl font-mono">
                     {title}
