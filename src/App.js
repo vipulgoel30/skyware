@@ -14,6 +14,7 @@ import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles
 import Blog from "./Components/Blog/Blog";
 import Career from "./Components/Career/Career";
+import Team from "./Components/Team/Team";
 
 AOS.init({
   once: true,
@@ -46,6 +47,7 @@ function App() {
         />
         <Route path="/blogs" element={<Blog />} />
         <Route path="/careers" element={<Career />} />
+        <Route path="/team" element={<Team />} />
         {/* <Route path="/navbar" element={<NavBar />} /> */}
       </Routes>
       <ToastContainer

@@ -15,9 +15,10 @@ function NavBar() {
       <img src={skywareLogo} alt="Skyware" className={`w-40 h-12 `} />
       <div className="flex gap-6 lg:gap-8 items-baseline justify-between">
         <div className="hidden navbar:flex gap-4 items-center">
-          <NavBarLink name="Career"></NavBarLink>
-          <NavBarLink name="Blog"></NavBarLink>
-          <NavBarLink name="Contact Us"></NavBarLink>
+          {window.location.pathname !== '/' && < NavBarLink name="Home" />}
+          <NavBarLink name="Career" />
+          <NavBarLink name="Blog" />
+          <NavBarLink name="Contact Us" />
         </div>
         <LoginHandler />
       </div>
