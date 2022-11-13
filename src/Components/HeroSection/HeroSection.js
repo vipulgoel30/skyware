@@ -18,7 +18,10 @@ function HeroSection() {
   // console.log(primaryNavBarStatus, "NavBar");
   return (
     <>
-      <Background className="min-h-screen h-fit bg-purple-100  flex flex-col gap-12 lg:gap-20   font-mono pb-12 hero-section ">
+      <Background
+        className="min-h-screen h-fit bg-purple-100  flex flex-col gap-12 lg:gap-20 justify-center
+        font-mono pb-12 hero-section "
+      >
         {/* Main content of hero section */}
         <div className="flex flex-col-reverse lg:flex-row  items-center  px-4 md:px-8 lg:px-12">
           <div className="flex gap-6 lg:gap-8 flex-col items-center justify-center w-full lg:w-3/5">

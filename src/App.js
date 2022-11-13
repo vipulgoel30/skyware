@@ -26,16 +26,21 @@ function App() {
     <>
       <NavBar />
       <Routes>
-        <Route path="/" element={<>
-          <div className={`${navState ? "hidden" : ""} navbar:block`}>
-            <HeroSection />
-            <MainSection />
-          </div>
-          <NavBarSmallScreen
-            navStateSmallChanger={navStateSmallHandler}
-            state={navState}
-          />
-        </>} />
+        <Route
+          path="/"
+          element={
+            <>
+              <div className={`${navState ? "hidden" : ""} navbar:block`}>
+                <HeroSection />
+                <MainSection />
+              </div>
+              <NavBarSmallScreen
+                navStateSmallChanger={navStateSmallHandler}
+                state={navState}
+              />
+            </>
+          }
+        />
         <Route path="/blogs" element={<Blog />} />
         {/* <Route path="/navbar" element={<NavBar />} /> */}
       </Routes>
