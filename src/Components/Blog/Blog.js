@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import selectedImg from './selected.svg'
+import selectedImg from '../../selected.svg'
 
 export default function Blog() {
     const allTags = ['All', 'Tag 1', 'Tag 2', 'Tag 3', 'Tag 4']
