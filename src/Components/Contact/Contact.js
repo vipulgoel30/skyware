@@ -3,6 +3,7 @@ import contactUsImage from "../../Images/ContactFour.jpg";
 import patternImage from "../../Images/PatternTwo.jpg";
 import styled from "styled-components";
 import InputLayout from "../Login/InputLayout";
+// import Footer from "../Footer/Footer";
 function Contact(props) {
   const Background = styled.div`
     background: linear-gradient(
@@ -40,9 +41,9 @@ function Contact(props) {
         {/* <div className="open-sans text-center text-[#eee] font-extrabold text-5xl uppercase tracking-wider mt-24 mb-12">
           Contact Us
         </div> */}
-        <div className="w-[96%] lg:w-[90%] max-w-5xl    flex  justify-evenly gap-10 overflow-hidden">
-          <div className="w-[50%] lg-w[45%] opacity-100 flex justify-center flex-col items-center text-white gap-12">
-            <div className="text-4xl lg:text-5xl mantser break-words leading-[1.3]">
+        <div className="w-[96%] lg:w-[90%] max-w-5xl  flex flex-col md:flex-row justify-center  items-center gap-10 overflow-hidden">
+          <div className="w-[80%] sm:w-[90%] md:w-[45%]  opacity-180flex justify-center flex-col items-center text-white gap-12">
+            <div className="text-5xl  mantser break-words leading-[1.3]">
               Ready to get Started your storage with precision?
             </div>
             <p className="text-xl">
@@ -50,9 +51,9 @@ function Contact(props) {
               precison?.
             </p>
           </div>
-          <div className="w-[45%]  py-8 bg-white rounded-sm">
+          <div className="w-[80%] sm:w-[90%] md:w-[55%]  py-8 bg-white rounded-md">
             <form className=" flex gap-2 flex-col px-6">
-              <div className="flex gap-5 w-full">
+              <div className="flex-col lg:flex-row flex  gap-4 w-full ">
                 <InputLayout
                   type="text"
                   placeholder="Enter you name"

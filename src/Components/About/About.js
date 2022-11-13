@@ -36,7 +36,7 @@ function About(props) {
           </h1>
         </AboutBackground>
 
-        <div className="w-screen sm:w-11/12 md:w-4/5 flex flex-col items-center justify-center text-black  mt-12 italic leading-loose mx-auto text-xl">
+        <div className="w-screen sm:w-11/12 md:w-4/5 px-5 pb-10 flex flex-col items-center justify-center text-black  mt-12 italic leading-loose mx-auto text-xl">
           <span className=""></span>
           <p
             className=""

@@ -5,8 +5,8 @@ const OverlayComponent = styled.div`
   position: fixed;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur(20px);
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
   z-index: 30;
 `;
 

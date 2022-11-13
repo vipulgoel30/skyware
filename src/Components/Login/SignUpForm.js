@@ -33,7 +33,7 @@ function SignUpForm(props) {
 
   return (
     <div
-      className="w-[100vw] xsm:w-[90vw] sm:w-[80vw] md:w-[70vw] lg:w-[50vw] max-h-[95vh] overflow-auto rounded-lg bg-white px-6 py-8  flex flex-col gap-8"
+      className="w-[95vw] xsm:w-[90vw] sm:w-[80vw] md:w-[70vw] lg:w-[50vw] max-h-[95vh] overflow-auto rounded-lg bg-white px-6 py-8  flex flex-col gap-8"
       data-aos="fade-up"
     >
       <div className="flex flex-col gap-2 items-center">

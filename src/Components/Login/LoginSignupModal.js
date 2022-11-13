@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import Modal from "../UI/Modal/Modal";
 import LoginForm from "./LoginForm";
 import SignUpForm from "./SignUpForm";
-import { ImCross } from "react-icons/im";
+import { HiX } from "react-icons/hi";
 function LoginSignupModal(props) {
   const [formType, setFormType] = useState("login");
   function formTypeHandler() {
@@ -16,6 +16,13 @@ function LoginSignupModal(props) {
         fontFamily: "'Lato',sans-serif",
       }}
     >
+      <button
+        className="absolute top-3 right-3 z-[10] text-2xl text-black"
+        onClick={props.changeFormVisibility}
+        data-aos="fade-in"
+      >
+        <HiX />
+      </button>
       {formType === "login" ? (
         <LoginForm
           changeFormVisibility={props.changeFormVisibility}
@@ -27,12 +34,6 @@ function LoginSignupModal(props) {
           changeFormType={formTypeHandler}
         />
       )}
-      <button
-        className="absolute top-0 -right-10 text-xl text-white"
-        onClick={props.changeFormVisibility}
-      >
-        <ImCross />
-      </button>
     </Modal>
   );
 }

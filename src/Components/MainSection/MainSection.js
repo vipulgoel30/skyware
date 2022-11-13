@@ -5,6 +5,7 @@ import Solution from "../Solution/Solution";
 import Testimonials from "../Testimonials/Testimonials";
 import Supported from "../Supported/Supported";
 import Contact from "../Contact/Contact";
+import Footer from "../Footer/Footer";
 function MainSection() {
   const [currentLink, setCurrentLink] = useState("");
   function changeLinkHandler(data) {
@@ -20,6 +21,7 @@ function MainSection() {
       {/* <Testimonials onChangeLinkSet={changeLinkHandler} /> */}
       <Supported onChangeLinkSet={changeLinkHandler} />
       <Contact onChangeLinkSet={changeLinkHandler} />
+      <Footer />
     </>
   );
 }
