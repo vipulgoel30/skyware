@@ -10,15 +10,14 @@ function NavBar() {
 
   return (
     <div
-      className={` w-screen flex items-center justify-between py-3  px-5  lg:px-12  bg-transparent `}
+      className={` w-screen flex items-center bg-purple-100 justify-between py-1  px-5  lg:px-8 gap-5   `}
     >
-      <img src={skywareLogo} alt="Skyware" className={`w-52 h-14 `} />
-      <div className="flex gap-6 lg:gap-8 items-center">
-        <div className="hidden navbar:flex gap-6 lg:gap-8 items-center">
-          <NavBarLink name="Home" address=""></NavBarLink>
-          <NavBarLink name="About"></NavBarLink>
-          <NavBarLink name="Solution"></NavBarLink>
-          <NavBarLink name="Careers"></NavBarLink>
+      <img src={skywareLogo} alt="Skyware" className={`w-40 h-12 `} />
+      <div className="flex gap-6 lg:gap-8 items-baseline justify-between">
+        <div className="hidden navbar:flex gap-4 items-center">
+          <NavBarLink name="Career"></NavBarLink>
+          <NavBarLink name="Blog"></NavBarLink>
+          <NavBarLink name="Contact Us"></NavBarLink>
         </div>
         <LoginHandler />
       </div>

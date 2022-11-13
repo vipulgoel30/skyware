@@ -22,31 +22,31 @@ function NavBarSecondary(props) {
         currentLink={props.currentLink}
       />
       <NavBarSecondaryItem
+        name="About Us"
+        destination="About Us"
+        currentLink={props.currentLink}
+      />
+      <NavBarSecondaryItem
         name="Solution"
         destination="Solution"
         currentLink={props.currentLink}
       />
       <NavBarSecondaryItem
-        name="About"
-        destination="About"
+        name="Supported By"
+        destination="Supported By"
         currentLink={props.currentLink}
       />
-
       <NavBarSecondaryItem
         name="Testimonial"
         destination=""
         currentLink={props.currentLink}
       />
-      <NavBarSecondaryItem
-        name="Supported By"
-        destination=""
-        currentLink={props.currentLink}
-      />
-      <NavBarSecondaryItem
+
+      {/* <NavBarSecondaryItem
         name="Contact Us"
-        destination=""
+        destination="Contact Us"
         currentLink={props.currentLink}
-      />
+      /> */}
     </div>
   );
 }

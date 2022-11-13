@@ -29,7 +29,7 @@ function InputLayout(props) {
                 : "password"
               : props.type
           }
-          className="w-full px-6 py-2   rounded-lg outline-none transition-all duration-500 shadow-xl   bg-[#b3c6d33b] placeholder:text-slate-500 focus:shadow-2xl focus:scale-[1.02] placeholder:tracking-wider"
+          className="w-full px-6 py-2   rounded-lg outline-none transition-all duration-500 shadow-sm   bg-[#b3c6d33b] placeholder:text-slate-500 focus:shadow-2xl focus:scale-[1.02] placeholder:tracking-wider"
           placeholder={props.placeholder}
           value={props.email}
           onChange={props.onValueChange}

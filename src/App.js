@@ -36,10 +36,10 @@ function App() {
                 <HeroSection />
                 <MainSection />
               </div>
-              <NavBarSmallScreen
+              {/* <NavBarSmallScreen
                 navStateSmallChanger={navStateSmallHandler}
                 state={navState}
-              />
+              /> */}
             </>
           }
         />

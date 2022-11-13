@@ -60,13 +60,13 @@ function Supported(props) {
         as="div"
         onChange={(inView, entry) => {
           console.log(inView, entry);
-          props.onChangeLinkSet(inView ? "Supported" : "Home");
+          props.onChangeLinkSet(inView ? "Supported By" : "Home");
         }}
-        id="Supported"
+        id="Supported By"
         className="h-fit min-h-screen w-screen  flex flex-col justify-center relative bg-[#eee]"
       >
         <div
-          className="flex items-center justify-center gap-4 mt-16 mb-28"
+          className="flex items-center justify-center gap-4 pt-16 mb-28"
           data-aos="fade-up"
         >
           <span className="w-12 h-1 bg-[#333] sm:w-16 md:w-20"></span>
