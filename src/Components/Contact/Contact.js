@@ -36,13 +36,13 @@ function Contact(props) {
       id="Contact Us"
       //   className=""
     >
-      <Background className="w-screen h-fit min-h-screen flex justify-center items-center flex-col py-24 ">
+      <Background className="w-screen h-fit min-h-screen flex justify-center items-center   py-24 ">
         {/* <div className="open-sans text-center text-[#eee] font-extrabold text-5xl uppercase tracking-wider mt-24 mb-12">
           Contact Us
         </div> */}
-        <div className="w-[90%] max-w-5xl    flex  justify-evenly gap-10 overflow-hidden">
-          <div className="w-[45%] opacity-100 flex justify-center flex-col items-center text-white gap-12">
-            <div className="text-5xl mantser break-words leading-[1.3]">
+        <div className="w-[96%] lg:w-[90%] max-w-5xl    flex  justify-evenly gap-10 overflow-hidden">
+          <div className="w-[50%] lg-w[45%] opacity-100 flex justify-center flex-col items-center text-white gap-12">
+            <div className="text-4xl lg:text-5xl mantser break-words leading-[1.3]">
               Ready to get Started your storage with precision?
             </div>
             <p className="text-xl">
