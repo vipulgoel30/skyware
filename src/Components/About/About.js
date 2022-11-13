@@ -30,6 +30,7 @@ function About(props) {
           <h1
             className="text-white text-5xl tracking-widest "
             data-aos="fade-up"
+            data-aos-once="true"
           >
             About Us
           </h1>

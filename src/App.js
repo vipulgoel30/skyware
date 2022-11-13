@@ -14,7 +14,9 @@ import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles
 import Blog from "./Components/Blog/Blog";
 
-AOS.init();
+AOS.init({
+  once: true,
+});
 function App() {
   // for the small screen nav Bar
   const [navState, setNavState] = useState(false);
