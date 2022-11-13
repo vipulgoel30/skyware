@@ -2,6 +2,7 @@ import React, { useRef, useState } from 'react'
 import { RiSuitcaseFill } from 'react-icons/ri'
 
 export default function Career() {
+    const jobsRef = useRef();
     const title = useRef();
     const location = useRef();
     const allTags = ['All', 'Full Time', 'Part Time']
@@ -56,6 +57,13 @@ export default function Career() {
         return (!title.current?.value || regex.test(job.title)) && (!location.current?.value || job.location === location.current?.value) && (selectedTag === 'All' || job.type === selectedTag)
     })
 
+    function search() {
+        const filter = title.current.value || location.current.value
+        setFilter(filter)
+        const top = jobsRef.current?.getBoundingClientRect?.()?.top
+        if (filter && top) window.scrollTo({ top })
+    }
+
     function reset() {
         title.current.value = ''
         location.current.value = ''
@@ -64,34 +72,34 @@ export default function Career() {
 
     return (
         <div className='flex flex-col items-center gap-y-16 mb-16'>
-            <div className='relative max-w-fit w-[95%]'>
-                <img src='/images/careers.jpeg' alt='' className='w-full aspect-[1.25] sm:aspect-video max-h-[87.5vh]' />
+            <div className='relative'>
+                <img src='/images/career.jpg' alt='' className='w-screen aspect-[1.25] sm:aspect-video' />
                 <div className='absolute inset-0 bg-white bg-opacity-40 z-10'>
                     <div className='absolute left-10 right-10 top-1/2 -translate-y-1/2 space-y-8'>
                         <h2 className='font-bold text-xl sm:text-2xl md:text-3xl lg:text-4xl'>Get Jobs</h2>
                         <div className='flex flex-wrap gap-x-4 gap-y-2'>
-                            <input ref={title} placeholder='Job title' className='bg-white bg-opacity-30 sm:text-lg md:text-xl border border-black rounded-lg px-2 py-1 placeholder:text-black active:outline-none focus:outline-none' />
-                            <select ref={location} placeholder='Location' className='bg-white bg-opacity-30 sm:text-lg md:text-xl border border-black rounded-lg px-2 py-1 active:outline-none focus:outline-none'>
+                            <input ref={title} placeholder='Job title' className='bg-white bg-opacity-30 md:text-lg border border-black rounded-lg px-2 py-1 placeholder:text-black active:outline-none focus:outline-none' />
+                            <select ref={location} placeholder='Location' className='bg-white bg-opacity-30 md:text-lg border border-black rounded-lg px-2 py-1 active:outline-none focus:outline-none'>
                                 <option value=''>Location</option>
                                 <option value='Bangalore, India' className='bg-red'>Bangalore, India</option>
                                 <option value='Mumbai, India'>Mumbai, India</option>
                                 <option value='New Delhi, India'>New Delhi, India</option>
                             </select>
                             <div className='space-x-4'>
-                                <button className='sm:text-lg md:text-xl rounded-3xl cursor-pointer transition-all duration-500 px-5 py-1.5 font-mediu text-black bg-white bg-opacity-30 border border-black hover:scale-105 active:outline-none focus:outline-none' onClick={() => setFilter(title.current.value || location.current.value)}>Search</button>
-                                {filter && <button className='sm:text-lg md:text-xl rounded-3xl cursor-pointer transition-all duration-500 px-5 py-1.5 font-mediu text-black bg-white bg-opacity-30 border border-black hover:scale-105 active:outline-none focus:outline-none' onClick={reset}>Reset</button>}
+                                <button className='md:text-lg rounded-3xl cursor-pointer transition-all duration-500 px-5 py-1.5 font-mediu text-black bg-white bg-opacity-30 border border-black hover:scale-105 active:outline-none focus:outline-none' onClick={search}>Search</button>
+                                {filter && <button className='md:text-lg rounded-3xl cursor-pointer transition-all duration-500 px-5 py-1.5 font-mediu text-black bg-white bg-opacity-30 border border-black hover:scale-105 active:outline-none focus:outline-none' onClick={reset}>Reset</button>}
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div className='space-y-8 px-8'>
+            <div ref={jobsRef} className='space-y-8 px-8'>
                 <div className='flex flex-wrap gap-x-12 gap-y-6 justify-between items-center'>
                     <h2 className='font-bold text-xl sm:text-2xl md:text-3xl lg:text-4xl'>{filter ? 'Filtered' : selectedTag} Jobs</h2>
                     <ul className='gap-x-3 gap-y-2 flex flex-wrap self-end'>
                         {allTags.map(tag => {
                             const selected = tag === selectedTag
-                            return <li key={tag} className={`relative sm:text-lg md:text-xl rounded-3xl cursor-pointer transition-all duration-300 px-5 py-1.5 font-medium text-white border-2 border-green-400 bg-green-400 ${selected ? 'pl-14' : 'hover:text-green-400 hover:bg-white'}`} onClick={() => setSelectedTag(tag)}>
+                            return <li key={tag} className={`relative md:text-lg rounded-3xl cursor-pointer transition-all duration-300 px-5 py-1.5 font-medium text-white border-2 border-green-400 bg-green-400 ${selected ? 'pl-14' : 'hover:text-green-400 hover:bg-white'}`} onClick={() => setSelectedTag(tag)}>
                                 {selected && <img className='absolute top-1/2 -translate-y-1/2 left-4 h-2/3 aspect-square' alt="" src='/images/selected.svg' />}
                                 {tag}
                             </li>
