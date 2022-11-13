@@ -12,6 +12,7 @@ import NavBarSmallScreen from "./Components/NavBarSmallScreen/NavBarSmallScreen"
 
 import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles
+import Blog from "./Components/Blog/Blog";
 
 AOS.init();
 function App() {
@@ -23,20 +24,21 @@ function App() {
 
   return (
     <>
-      {/* <NavBar /> */}
-      <div className={`${navState ? "hidden" : ""} navbar:block`}>
-        <HeroSection />
-        <MainSection />
-      </div>
-      <NavBarSmallScreen
-        navStateSmallChanger={navStateSmallHandler}
-        state={navState}
-      />
-
-      {/* <Routes> */}
-      {/* <Route path="/" element={<NavBar />} /> */}
-      {/* <Route path="/navbar" element={<NavBar />} /> */}
-      {/* </Routes> */}
+      <NavBar />
+      <Routes>
+        <Route path="/" element={<>
+          <div className={`${navState ? "hidden" : ""} navbar:block`}>
+            <HeroSection />
+            <MainSection />
+          </div>
+          <NavBarSmallScreen
+            navStateSmallChanger={navStateSmallHandler}
+            state={navState}
+          />
+        </>} />
+        <Route path="/blogs" element={<Blog />} />
+        {/* <Route path="/navbar" element={<NavBar />} /> */}
+      </Routes>
       <ToastContainer
         position="bottom-right"
         pauseOnFocusLoss={false}
