@@ -6,6 +6,6 @@ const Modal = styled.div`
   top: 50%;
   left: 50%;
   translate: -50% -50%;
-  z-index: 200;
+  z-index: 100;
 `;
 export default Modal;

@@ -7,7 +7,7 @@ const OverlayComponent = styled.div`
   left: 0;
   background-color: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(20px);
-  z-index: 100;
+  z-index: 30;
 `;
 
 const Overlay = (props) => {

@@ -7,14 +7,14 @@ function MainSection() {
   function changeLinkHandler(data) {
     setCurrentLink(data);
   }
-  //   console.log(currentLink);
-  return (
-    <>
-      <NavBarSecondary currentLink={currentLink} />
+    console.log(currentLink);
+    return (
+      <>
+        <NavBarSecondary currentLink={currentLink} />
 
-      <About onChangeLinkSet={changeLinkHandler} />
-      <Solution onChangeLinkSet={changeLinkHandler} />
-    </>
-  );
+        <Solution onChangeLinkSet={changeLinkHandler} />
+        <About onChangeLinkSet={changeLinkHandler} />
+      </>
+    );
 }
 export default MainSection;

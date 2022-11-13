@@ -19,14 +19,20 @@ function About(props) {
     return (
       <InView
         as="div"
-        onChange={(inView, entry) =>
-          props.onChangeLinkSet(inView ? "About" : "Home")
-        }
+        onChange={(inView, entry) => {
+          console.log(inView, entry);
+          props.onChangeLinkSet(inView ? "About" : "Home");
+        }}
         id="About"
         className="h-fit min-h-screen"
       >
         <AboutBackground className=" h-fit flex items-center justify-center ">
-          <h1 className="text-white text-5xl tracking-widest ">About Us</h1>
+          <h1
+            className="text-white text-5xl tracking-widest "
+            data-aos="fade-up"
+          >
+            About Us
+          </h1>
         </AboutBackground>
 
         <div className="w-screen sm:w-11/12 md:w-4/5 flex flex-col items-center justify-center text-black  mt-12 italic leading-loose mx-auto text-xl">
@@ -36,9 +42,10 @@ function About(props) {
             style={{
               fontFamily: " 'Dosis', sans-serif",
             }}
+            data-aos="fade-up"
           >
             <span className="text-3xl text-slate-600 pl-8 pr-3">&#8220;</span>
-            <spam className="text-2xl font-semibold">Skyware</spam> envisions a
+            <span className="text-2xl font-semibold">Skyware</span> envisions a
             future with zero post harvest storage losses. Currently 1 Billion MT
             of food is wasted annually during the processing stage. Skyware
             holds the virtue to turn the tables around this problem with its

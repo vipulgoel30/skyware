@@ -10,7 +10,7 @@ function Solution(props) {
         console.log(inView ? "Solution" : "Home");
         props.onChangeLinkSet(inView ? "Solution" : "");
       }}
-      threshold=".2"
+      // threshold=".2"
       id="Solution"
     >
       <div className="bg-red-300">

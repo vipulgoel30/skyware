@@ -9,7 +9,6 @@ import DashboardImage from "../../Images/DashboardImage.png";
 import { Link } from "react-router-dom";
 function HeroSection() {
   const Background = styled.div`
-    // clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
     & .typed-cursor {
       color: black;
       margin-top: -20px;
@@ -19,7 +18,7 @@ function HeroSection() {
   // console.log(primaryNavBarStatus, "NavBar");
   return (
     <>
-      <Background className="min-h-screen h-fit bg-purple-100  flex flex-col gap-12 lg:gap-20   font-mono pb-4 hero-section ">
+      <Background className="min-h-screen h-fit bg-purple-100  flex flex-col gap-12 lg:gap-20   font-mono pb-12 hero-section ">
         {/* Main content of hero section */}
         <NavBar />
         <div className="flex flex-col-reverse lg:flex-row  items-center  px-4 md:px-8 lg:px-12">

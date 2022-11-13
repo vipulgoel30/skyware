@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css"; // You can also use <link> for styles
+
 import NavBarSecondaryItem from "./NavBarSecondaryItem";
+// import "./NavBarSecondary.css";
 // ..
-AOS.init();
+
 function NavBarSecondary(props) {
   //   const [activeLink, setActiveLink] = useState("About");
   //   function changeActiveLink(data) {
@@ -13,7 +13,7 @@ function NavBarSecondary(props) {
   return (
     <div
       id="navbarsecondary"
-      className="bg-white flex gap-12 justify-center sticky top-0 shadow-md px-auto pt-5 text-sm tracking-widest font-semibold uppercase z-[6]"
+      className="hidden navbar:flex bg-white  gap-12 justify-center sticky top-0 shadow-md px-auto pt-5 text-sm tracking-widest font-semibold uppercase z-[6]"
       //   data-aos="fade-in"
     >
       <NavBarSecondaryItem
@@ -22,15 +22,16 @@ function NavBarSecondary(props) {
         currentLink={props.currentLink}
       />
       <NavBarSecondaryItem
-        name="About"
-        destination="About"
-        currentLink={props.currentLink}
-      />
-      <NavBarSecondaryItem
         name="Solution"
         destination="Solution"
         currentLink={props.currentLink}
       />
+      <NavBarSecondaryItem
+        name="About"
+        destination="About"
+        currentLink={props.currentLink}
+      />
+
       <NavBarSecondaryItem
         name="Testimonial"
         destination=""

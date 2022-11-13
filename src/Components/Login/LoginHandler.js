@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Overlay from "../UI/Modal/Overlay";
-import LoginForm from "./LoginForm";
-function LoginButton() {
+import LoginSignupModal from "./LoginSignupModal";
+function LoginHandler() {
   const [formVisibility, setFormVisibility] = useState(false);
   function changeFormVisibilityHandler() {
     console.log(formVisibility);
@@ -19,11 +19,13 @@ function LoginButton() {
       </button>
       {formVisibility && (
         <div>
-          <LoginForm changeFormVisibility={changeFormVisibilityHandler} />
+          <LoginSignupModal
+            changeFormVisibility={changeFormVisibilityHandler}
+          />
           <Overlay changeVisibility={changeFormVisibilityHandler} />
         </div>
       )}
     </>
   );
 }
-export default LoginButton;
+export default LoginHandler;
