@@ -48,7 +48,7 @@ function Contact(props) {
             </div>
             <p className="text-xl">
               Contact us for a FREE consultation on how to get your storage with
-              precison?.
+              precison?
             </p>
           </div>
           <div className="w-[80%] sm:w-[90%] md:w-[55%]  py-8 bg-white rounded-md">
