@@ -75,7 +75,7 @@ export default function Career() {
             <div className='relative'>
                 <img src='/images/career.jpg' alt='' className='w-screen aspect-[1.25] sm:aspect-video' />
                 <div className='absolute inset-0 bg-white bg-opacity-40 z-10'>
-                    <div className='absolute left-10 right-10 top-1/2 -translate-y-1/2 space-y-8'>
+                    <div className='absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 space-y-8'>
                         <h2 className='font-bold text-xl sm:text-2xl md:text-3xl lg:text-4xl'>Get Jobs</h2>
                         <div className='flex flex-wrap gap-x-4 gap-y-2'>
                             <input ref={title} placeholder='Job title' className='bg-white bg-opacity-30 md:text-lg border border-black rounded-lg px-2 py-1 placeholder:text-black active:outline-none focus:outline-none' />
