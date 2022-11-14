@@ -90,7 +90,7 @@ function Contact(props) {
                 type="submit"
                 className="w-full bg-gradient-to-r from-primary to-secondary text-2xl text-white py-2 rounded-2xl font-mono hover:-translate-y-1 hover:scale-[1.02] active:translate-y-1 active:scale-[.98] transition-all duration-700 mt-4"
               >
-                Signup
+                Submit
               </button>
             </form>
           </div>
