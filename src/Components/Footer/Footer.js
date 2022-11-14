@@ -43,27 +43,24 @@ function Footer() {
               Products
             </h1>
 
-            <a
-              href="#"
-              target="_blank"
+            <Link
+              to="/"
               className="  opacity-70  font-medium open-sans tracking-wide"
             >
               Detector
-            </a>
-            <a
-              href="#"
-              target="_blank"
+            </Link>
+            <Link
+              to="/"
               className="  opacity-70  font-medium open-sans tracking-wide"
             >
               Nodes
-            </a>
-            <a
-              href="https://goo.gl/maps/2uGH4UFbgMhCQLrp7"
-              target="_blank"
+            </Link>
+            <Link
+              to="/"
               className="  opacity-70  font-medium open-sans tracking-wide"
             >
               Changer
-            </a>
+            </Link>
           </div>
           <div className="flex flex-col gap-3 ">
             <h1 className="montser  opacity-90 uppercase text-xl mb-2 tracking-widest font-semibold">
@@ -144,8 +141,15 @@ function Footer() {
             </Link>
           </div>
           <div className="flex gap-4 text-4xl items-center">
-            <AiFillTwitterCircle className="opacity-70" />
-            <AiFillLinkedin className="opacity-70" />
+            <a href="https://twitter.com/TeamSkyware" target="_blank">
+              <AiFillTwitterCircle className="opacity-70" />
+            </a>
+            <a
+              href="https://www.linkedin.com/company/skyware-automation/"
+              target="_blank"
+            >
+              <AiFillLinkedin className="opacity-70" />
+            </a>
           </div>
         </div>
       </div>

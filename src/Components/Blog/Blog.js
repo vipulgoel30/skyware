@@ -139,7 +139,9 @@ export default function Blog() {
                     className={`opacity-60 font-semibold text-sm text-white inline rounded-full px-4 py-1 whitespace-nowrap`}
                     style={{
                       backgroundColor: `#${
-                        colorTags[Number(tag.split(" ")[1]) - 1]
+                        colorTags[Number(tag.split(" ")[1]) - 1] === "000000"
+                          ? "cyan"
+                          : colorTags[Number(tag.split(" ")[1]) - 1]
                       }`,
                     }}
                   >
