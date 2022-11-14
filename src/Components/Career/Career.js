@@ -60,8 +60,7 @@ export default function Career() {
     function search() {
         const filter = title.current.value || location.current.value
         setFilter(filter)
-        const top = jobsRef.current?.getBoundingClientRect?.()?.top
-        if (filter && top) window.scrollTo({ top })
+        window.scrollTo({ top: jobsRef.current?.getBoundingClientRect?.()?.top })
     }
 
     function reset() {
@@ -99,7 +98,7 @@ export default function Career() {
                     <ul className='gap-x-3 gap-y-2 flex flex-wrap self-end'>
                         {allTags.map(tag => {
                             const selected = tag === selectedTag
-                            return <li key={tag} className={`relative md:text-lg rounded-3xl cursor-pointer transition-all duration-300 px-5 py-1.5 font-medium text-white border-2 border-green-400 bg-green-400 ${selected ? 'pl-14' : 'hover:text-green-400 hover:bg-white'}`} onClick={() => setSelectedTag(tag)}>
+                            return <li key={tag} className={`relative text-lg rounded-3xl cursor-pointer transition-all duration-300 px-4 py-1 font-medium text-white border-2 border-green-400 bg-green-400 ${selected ? 'pl-14' : 'hover:text-green-400 hover:bg-white'}`} onClick={() => setSelectedTag(tag)}>
                                 {selected && <img className='absolute top-1/2 -translate-y-1/2 left-4 h-2/3 aspect-square' alt="" src='/images/selected.svg' />}
                                 {tag}
                             </li>

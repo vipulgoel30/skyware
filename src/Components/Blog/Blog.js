@@ -65,8 +65,8 @@ export default function Blog() {
         <ul className="flex md:justify-center px-8 my-8 flex-wrap gap-x-6 gap-y-3">
             {allTags.map(tag => {
                 const selected = tag === selectedTag
-                return <li key={tag} className={`relative text-xl rounded-3xl cursor-pointer transition-all duration-300 px-5 py-1.5 font-medium text-white border-2 border-green-400 bg-green-400 ${selected ? 'pl-14' : 'hover:text-green-400 hover:bg-white'}`} onClick={() => setSelectedTag(tag)}>
-                    {selected && <img className='absolute top-1/2 -translate-y-1/2 left-4 h-2/3 aspect-square' alt="" src='/images/selected.svg' />}
+                return <li key={tag} className={`relative text-lg rounded-3xl cursor-pointer transition-all duration-300 px-4 py-1 font-medium text-white border-2 border-green-400 bg-green-400 ${selected ? 'pl-14' : 'hover:text-green-400 hover:bg-white'}`} onClick={() => setSelectedTag(tag)}>
+                    {selected && <img className='absolute top-1/2 -translate-y-1/2 left-4 h-3/5 aspect-square' alt="" src='/images/selected.svg' />}
                     {tag}
                 </li>
             })}
