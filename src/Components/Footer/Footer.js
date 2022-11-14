@@ -96,12 +96,13 @@ function Footer() {
             >
               About Us
             </a>
-            <Link
-              to="/team"
+            <a
+              href="/team"
+              target="_blank"
               className="  opacity-70  font-medium open-sans tracking-wide"
             >
               Team
-            </Link>
+            </a>
             <a
               href="#Testimonial"
               className="  opacity-70  font-medium open-sans tracking-wide"
