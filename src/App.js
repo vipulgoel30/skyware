@@ -21,12 +21,12 @@ AOS.init({
 function App() {
   return (
     <Suspense fallback={<Loader />}>
-      <NavBar />
       <Routes>
         <Route
           path="/"
           element={
             <>
+              <NavBar />
               <NavBarSmallScreen />
               <HeroSection />
               <MainSection />

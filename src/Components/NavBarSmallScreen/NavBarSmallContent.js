@@ -27,17 +27,17 @@ function NavBarSmallContent(props) {
             navStateSmallChanger={props.navStateSmallChanger}
           />
           <NavBarSmallContentHref
-            content={"Solution"}
+            content={"Product"}
             navStateSmallChanger={props.navStateSmallChanger}
           />
-          <NavBarSmallContentLink
-            content={"Blog"}
-            link={"blogs"}
+          <NavBarSmallContentHref
+            content={"blogs"}
+            target={true}
             navStateSmallChanger={props.navStateSmallChanger}
           />
-          <NavBarSmallContentLink
-            content={"Career"}
-            link={"careers"}
+          <NavBarSmallContentHref
+            content={"careers"}
+            target={true}
             navStateSmallChanger={props.navStateSmallChanger}
           />
           <NavBarSmallContentHref
@@ -48,9 +48,9 @@ function NavBarSmallContent(props) {
             content={"Supported By"}
             navStateSmallChanger={props.navStateSmallChanger}
           />
-          <NavBarSmallContentLink
-            content={"Team"}
-            link={"team"}
+          <NavBarSmallContentHref
+            content={"team"}
+            target={true}
             navStateSmallChanger={props.navStateSmallChanger}
           />
         </div>
