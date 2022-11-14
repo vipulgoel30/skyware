@@ -10,11 +10,14 @@ import {
 import { Link } from "react-router-dom";
 function Footer() {
   return (
-    <div className="flex justify-center w-screen  h-fit py-12 px-4 bg-[#0a2a38] shadow-2xl text-white">
+    <div className="w-screen  h-fit py-12 px-4 bg-[#0a2a38] shadow-2xl flex flex-col  items-center text-white overflow-hidden">
       <div className="w-fit flex flex-col gap-16">
-        <div className="grid grid-cols-1 grid-row-4 gap-8 xsm:grid-cols-2 xsm:grid-rows-2 md:grid-cols-4 md:grid-rows-1">
-          <div className="flex flex-col  ">
-            <img src={SkywareLogo} className="w-54 h-12 mb-2 ml-4"></img>
+        <div className="flex gap-2 sm:gap-8 md:gap-16  justify-evenly">
+          <div className="flex flex-col  max-w-3xl ">
+            <img
+              src={SkywareLogo}
+              className="w-32 h-8 md:w-54 md:h-12 mb-2 ml-4"
+            ></img>
             <a
               href="https://goo.gl/maps/2uGH4UFbgMhCQLrp7"
               target="_blank"
@@ -38,8 +41,8 @@ function Footer() {
               <span className="open-sans tracking-wide">info@skyware.in</span>
             </a>
           </div>
-          <div className="flex flex-col gap-3  ">
-            <h1 className="montser  opacity-90 uppercase text-xl mb-2 tracking-widest font-semibold">
+          <div className="flex flex-col gap-3 max-w-3xl ">
+            <h1 className="montser  opacity-90 uppercase text-base md:text-xl mb-2 tracking-widest font-semibold">
               Products
             </h1>
 
@@ -65,8 +68,8 @@ function Footer() {
               Changer
             </a>
           </div>
-          <div className="flex flex-col gap-3 ">
-            <h1 className="montser  opacity-90 uppercase text-xl mb-2 tracking-widest font-semibold">
+          <div className="flex flex-col gap-3 max-w-3xl">
+            <h1 className="montser  opacity-90 uppercase text-lg md:text-xl mb-2 tracking-widest font-semibold">
               Resources
             </h1>
 
@@ -85,8 +88,8 @@ function Footer() {
               Career
             </a>
           </div>
-          <div className=" flex-col gap-3  flex">
-            <h1 className=" montser  opacity-90 uppercase text-xl mb-2 tracking-widest font-semibold">
+          <div className=" flex-col gap-3 max-w-3xl hidden md:flex">
+            <h1 className=" montser  opacity-90 uppercase text-lg md:text-xl mb-2 tracking-widest font-semibold">
               Company
             </h1>
 

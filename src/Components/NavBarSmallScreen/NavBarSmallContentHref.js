@@ -6,10 +6,12 @@ function NavBarSmallContentHref(props) {
       onClick={props.navStateSmallChanger}
     >
       <div className="flex items-center justify-evenly">
-        <div className="text-4xl overflow-hidden w-12 h-12 rounded-full">
-          {/* <AiOutlineHome /> */}
-        </div>
-        <h1 className="text-4xl">{props.content}</h1>
+        {/* <div className="text-xl overflow-hidden w-12 h-12 rounded-full">
+          <AiOutlineHome />
+        </div> */}
+        <h1 className="text-lg open-sans tracking-wider border-b-2 border-primary pr-6">
+          {props.content}
+        </h1>
       </div>
     </a>
   );

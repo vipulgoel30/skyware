@@ -1,11 +1,11 @@
 import Image1 from "../../Images/Node.jpeg";
 import Image2 from "../../Images/HubImage.jpeg";
 import Image3 from "../../Images/NodeSide.jpeg";
-import AboutImageNode from "./AboutImageNode";
-function AboutImage() {
+import ProductImageNode from "./ProductImageNode";
+function ProductImage() {
   return (
-    <div className="w-2/5 relative h-80 ">
-      <AboutImageNode
+    <div className="w-11/12 md:w-1/3 relative h-80 ">
+      <ProductImageNode
         top="0"
         left="0"
         z="0"
@@ -13,7 +13,7 @@ function AboutImage() {
         image={Image1}
         name={"Node"}
       />
-      <AboutImageNode
+      <ProductImageNode
         bottom="0"
         left="20%"
         z="4"
@@ -21,7 +21,7 @@ function AboutImage() {
         image={Image2}
         name={"Hub"}
       />
-      <AboutImageNode
+      <ProductImageNode
         right="0"
         top="10%"
         z="2"
@@ -44,4 +44,4 @@ function AboutImage() {
     </div>
   );
 }
-export default AboutImage;
+export default ProductImage;

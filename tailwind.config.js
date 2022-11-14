@@ -8,9 +8,10 @@ module.exports = {
         secondary: "#60a5fa",
       },
       keyframes: {
-        pulseShadow: {
+        productArrow: {
           "50%": {
-            boxShadow: "0px 0px 5px 5px rgba(0,0,0,.2)",
+            scale: "1.4",
+            color: "#000",
           },
         },
       },

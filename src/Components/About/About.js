@@ -1,8 +1,8 @@
 import { InView } from "react-intersection-observer";
 import styled from "styled-components";
 import AboutSectionImage from "../../Images/AboutSection.jpg";
-import AboutImage from "./AboutImage";
-import AboutImageNode from "./AboutImageNode";
+// import AboutImage from "../Product/AboutImage";
+// import AboutImageNode from "./AboutImageNode";
 function About(props) {
   const AboutBackground = styled.div`
     background: linear-gradient(

@@ -15,7 +15,7 @@ import "aos/dist/aos.css"; // You can also use <link> for styles
 import Blog from "./Components/Blog/Blog";
 import Career from "./Components/Career/Career";
 import Team from "./Components/Team/Team";
-import AboutImage from "./Components/About/AboutImage";
+// import AboutImage from "./Components/About/AboutImage";
 
 AOS.init({
   once: true,
