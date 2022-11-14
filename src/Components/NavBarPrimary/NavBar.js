@@ -6,15 +6,13 @@ import NavBarLink from "./NavBarLink";
 // import "./NavBar.css";
 import LoginHandler from "../Login/LoginHandler";
 function NavBar() {
-
-
   return (
     <div
       className={` w-screen flex items-center ${
         window.location.pathname === "/" && "bg-purple-100"
       } justify-between py-1  px-3 sm:px-6  lg:px-8 gap-5   `}
     >
-      <img loading="eager"
+      <img
         src={skywareLogo}
         alt="Skyware"
         className={`w-24 h-6 xsm:w-32 xsm:h-8 sm:w-40 sm:h-12`}

@@ -14,7 +14,7 @@ function Footer() {
       <div className="w-fit flex flex-col gap-16">
         <div className="grid grid-cols-1 grid-row-4 gap-8 xsm:grid-cols-2 xsm:grid-rows-2 md:grid-cols-4 md:grid-rows-1">
           <div className="flex flex-col  ">
-            <img loading="eager" src={SkywareLogo} className="w-54 h-12 mb-2 ml-4"></img>
+            <img src={SkywareLogo} className="w-54 h-12 mb-2 ml-4"></img>
             <a
               href="https://goo.gl/maps/2uGH4UFbgMhCQLrp7"
               target="_blank"
