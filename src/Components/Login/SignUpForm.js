@@ -72,7 +72,7 @@ function SignUpForm(props) {
           type="submit"
           className="w-full bg-gradient-to-r from-primary to-secondary text-2xl text-white py-2 rounded-2xl font-mono hover:-translate-y-1 hover:scale-[1.02] active:translate-y-1 active:scale-[.98] transition-all duration-700"
         >
-          Signup
+          Submit
         </button>
         {/* <h1 className="text-center tracking-wide text-lg">
           Already have account{"  "}
