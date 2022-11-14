@@ -1,5 +1,6 @@
 import SkywareLogoSquare from "../../Images/SkywareLogoSquare.png";
 import SolutionOneImage from "../../Images/solutionOne.jpg";
+import SolutionTwo from "../../Images/SolutionTwo.jpg";
 import SolutionChartItem from "./SolutionChartItem";
 function SolutionChart() {
   return (
@@ -70,7 +71,7 @@ function SolutionChart() {
         data-aos="fade-up"
       >
         <span className="w-12 h-1 bg-[#333] sm:w-16 md:w-20"></span>
-        <h1 className=" text-2xl xsm:text-3xl sm:text-4xl md:text-5xl   open-sans font-extrabold uppercase tracking-[2px] text-slate-800   ">
+        <h1 className=" text-lg xsm:text-xl sm:text-2xl md:text-3xl   open-sans font-extrabold uppercase tracking-[2px] text-slate-800   ">
           Features
         </h1>
         <span className="w-12 h-1 bg-[#333] sm:w-16 md:w-20"></span>
@@ -89,7 +90,7 @@ function SolutionChart() {
         title="Shelf-Life Prediction"
         contentStart="our systems analyse  "
         contentEnd="numerous parameters to predict shelf life and suggest ways of maximising it"
-        image={SolutionOneImage}
+        image={SolutionTwo}
       />
       <SolutionChartItem
         colorOne="#c8054b"

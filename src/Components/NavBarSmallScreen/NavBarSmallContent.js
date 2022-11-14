@@ -14,16 +14,20 @@ function NavBarSmallContent(props) {
         <img src={SkywareLogo} className="w-32 h-8"></img>
       </div>
       <div
-        className="fixed z-[2] top-0 w-full bg-white pt-32  min-h-screen h-screen overflow-y-scroll "
+        className="fixed z-[2] top-0 w-full bg-white py-24  min-h-screen h-screen overflow-y-scroll "
         data-aos="fade-up"
       >
-        <div className="flex flex-col  gap-12 items-start">
+        <div className="flex flex-col   items-start px-12 gap-4">
           <NavBarSmallContentHref
             content={"Home"}
             navStateSmallChanger={props.navStateSmallChanger}
           />
           <NavBarSmallContentHref
             content={"About"}
+            navStateSmallChanger={props.navStateSmallChanger}
+          />
+          <NavBarSmallContentHref
+            content={"Solution"}
             navStateSmallChanger={props.navStateSmallChanger}
           />
           <NavBarSmallContentLink
@@ -36,7 +40,19 @@ function NavBarSmallContent(props) {
             link={"careers"}
             navStateSmallChanger={props.navStateSmallChanger}
           />
-         
+          <NavBarSmallContentHref
+            content={"Contact Us"}
+            navStateSmallChanger={props.navStateSmallChanger}
+          />
+          <NavBarSmallContentHref
+            content={"Supported By"}
+            navStateSmallChanger={props.navStateSmallChanger}
+          />
+          <NavBarSmallContentLink
+            content={"Team"}
+            link={"team"}
+            navStateSmallChanger={props.navStateSmallChanger}
+          />
         </div>
       </div>
     </div>

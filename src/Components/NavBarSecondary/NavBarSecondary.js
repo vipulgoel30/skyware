@@ -27,8 +27,13 @@ function NavBarSecondary(props) {
         currentLink={props.currentLink}
       />
       <NavBarSecondaryItem
-        name="Solution"
-        destination="Solution"
+        name="Product"
+        destination="Product"
+        currentLink={props.currentLink}
+      />
+      <NavBarSecondaryItem
+        name="Laurels"
+        destination="Laurels"
         currentLink={props.currentLink}
       />
       <NavBarSecondaryItem

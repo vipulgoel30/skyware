@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import NavBarSecondary from "../NavBarSecondary/NavBarSecondary";
 import About from "../../Components/About/About";
-import Solution from "../Solution/Solution";
+import Product from "../Product/Product";
 import Testimonials from "../Testimonials/Testimonials";
 import Supported from "../Supported/Supported";
 import Contact from "../Contact/Contact";
@@ -18,9 +18,9 @@ function MainSection() {
       <NavBarSecondary currentLink={currentLink} />
 
       <About onChangeLinkSet={changeLinkHandler} />
-      <Solution onChangeLinkSet={changeLinkHandler} />
-      <Laurels />
-      {/* <Testimonials onChangeLinkSet={changeLinkHandler} /> */}
+      <Product onChangeLinkSet={changeLinkHandler} />
+      <Laurels onChangeLinkSet={changeLinkHandler} />
+      <Testimonials onChangeLinkSet={changeLinkHandler} />
       <Supported onChangeLinkSet={changeLinkHandler} />
       {/* <Testimonials onChangeLinkSet={changeLinkHandler} /> */}
       <Contact onChangeLinkSet={changeLinkHandler} />

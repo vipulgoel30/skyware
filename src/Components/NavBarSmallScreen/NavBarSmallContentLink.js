@@ -8,10 +8,12 @@ function NavBarSmallContentLink(props) {
       onClick={props.navStateSmallChanger}
     >
       <div className="flex items-center justify-evenly">
-        <div className="text-4xl overflow-hidden w-12 h-12 rounded-full">
+        {/* <div className="text-xl overflow-hidden w-12 h-12 rounded-full">
           <AiOutlineHome />
-        </div>
-        <h1 className="text-4xl">{props.content}</h1>
+        </div> */}
+        <h1 className="text-lg  tracking-wider open-sans border-b-2 border-primary pr-6">
+          {props.content}
+        </h1>
       </div>
     </Link>
   );
