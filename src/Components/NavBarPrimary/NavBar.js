@@ -1,16 +1,17 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import skywareLogo from "../../Images/SkywareLogo.webp";
-// import LoginButton from "../Login/LoginButton";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import NavBarLink from "./NavBarLink";
-// import "./NavBar.css";
 import LoginHandler from "../Login/LoginHandler";
+
 function NavBar() {
+  const location = useLocation();
+
   return (
     <div
       className={` w-screen flex items-center ${
-        window.location.pathname === "/" && "bg-purple-100"
-      } justify-between py-1  px-3 sm:px-6  lg:px-8 gap-5   `}
+        location.pathname === "/" && "bg-purple-100"
+      } justify-between py-1 px-3 sm:px-6 lg:px-8 gap-5`}
     >
       <img
         src={skywareLogo}
