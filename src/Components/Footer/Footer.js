@@ -91,7 +91,7 @@ function Footer() {
             </h1>
 
             <a
-              href="#"
+              href="#About Us"
               className="  opacity-70  font-medium open-sans tracking-wide"
             >
               About Us

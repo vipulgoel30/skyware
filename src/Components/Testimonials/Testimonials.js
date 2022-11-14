@@ -24,7 +24,7 @@ function Testimonials(props) {
       id="Testimonial"
       className="h-fit min-h-screen"
     >
-      <Background className="pt-10 pb-16 ">
+      <Background className="pt-10 pb-32 ">
         <div className="flex flex-col items-center gap-16">
           <div
             className="flex items-center justify-center gap-4 pt-16 "

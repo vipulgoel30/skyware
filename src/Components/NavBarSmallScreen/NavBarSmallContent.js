@@ -8,13 +8,13 @@ function NavBarSmallContent(props) {
   return (
     <div className="w-screen relative block navbar:hidden">
       <div
-        className="fixed top-0 w-screen z-[5] bg-white flex justify-center py-3 shadow-md "
+        className="fixed top-0 w-screen z-[7] bg-white flex justify-center py-3 shadow-md "
         data-aos="fade-down"
       >
         <img loading="eager" src={SkywareLogo} className="w-32 h-8"></img>
       </div>
       <div
-        className="fixed z-[2] top-0 w-full bg-white py-24  min-h-screen h-screen overflow-y-scroll "
+        className="fixed z-[6] top-0 w-full bg-white py-24  min-h-screen h-screen overflow-y-scroll "
         data-aos="fade-up"
       >
         <div className="flex flex-col   items-start px-12 gap-4">
