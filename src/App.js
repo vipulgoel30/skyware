@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
@@ -6,7 +6,7 @@ import NavBar from "./Components/NavBarPrimary/NavBar";
 import HeroSection from "./Components/HeroSection/HeroSection";
 import NavBarSecondary from "./Components/NavBarSecondary/NavBarSecondary";
 import MainSection from "./Components/MainSection/MainSection";
-import { ToastContainer, toast } from "react-toastify";
+import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import NavBarSmallScreen from "./Components/NavBarSmallScreen/NavBarSmallScreen";
 
@@ -24,9 +24,11 @@ AOS.init({
 function App() {
   const [loaderState, setLoaderState] = useState(true);
 
-  setTimeout(() => {
-    setLoaderState((prevState) => !prevState);
-  }, 1000);
+  useEffect(() => {
+    setTimeout(() => {
+      setLoaderState((prevState) => !prevState);
+    }, 1000);
+  }, [])
   // for the small screen nav Bar
   // const [navState, setNavState] = useState(false);
   // function navStateSmallHandler() {
