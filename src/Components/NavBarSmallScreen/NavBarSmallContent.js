@@ -1,9 +1,7 @@
 import SkywareLogo from "../../Images/SkywareLogo.webp";
-import { AiOutlineHome } from "react-icons/ai";
-import { SiAboutdotme } from "react-icons/si";
-// import NavBarSmallContentItem from "./NavBarSmallContentHref";
+
 import NavBarSmallContentHref from "./NavBarSmallContentHref";
-import NavBarSmallContentLink from "./NavBarSmallContentLink";
+
 function NavBarSmallContent(props) {
   return (
     <div className="w-screen relative block navbar:hidden">

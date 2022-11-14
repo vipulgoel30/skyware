@@ -1,6 +1,6 @@
 import { InView } from "react-intersection-observer";
 import contactUsImage from "../../Images/ContactFour.webp";
-import patternImage from "../../Images/PatternTwo.webp";
+// import patternImage from "../../Images/PatternTwo.webp";
 import styled from "styled-components";
 import InputLayout from "../Login/InputLayout";
 // import Footer from "../Footer/Footer";
@@ -16,17 +16,17 @@ function Contact(props) {
     background-repeat: no-repeat;
     background-size: cover;
   `;
-  const RightImageContact = styled.div`
-    background: linear-gradient(
-        to right,
-        rgba(0, 0, 0, 0.1),
-        rgba(0, 0, 0, 0.2)
-      ),
-      url(${patternImage});
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: right;
-  `;
+  // const RightImageContact = styled.div`
+  //   background: linear-gradient(
+  //       to right,
+  //       rgba(0, 0, 0, 0.1),
+  //       rgba(0, 0, 0, 0.2)
+  //     ),
+  //     url(${patternImage});
+  //   background-size: cover;
+  //   background-repeat: no-repeat;
+  //   background-position: right;
+  // `;
   return (
     <InView
       as="div"
