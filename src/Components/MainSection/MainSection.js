@@ -12,7 +12,7 @@ function MainSection() {
   function changeLinkHandler(data) {
     setCurrentLink(data);
   }
-  console.log(currentLink);
+  // console.log(currentLink);
   return (
     <>
       <NavBarSecondary currentLink={currentLink} />

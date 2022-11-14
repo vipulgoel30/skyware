@@ -11,7 +11,7 @@ function Product(props) {
     <InView
       as="div"
       onChange={(inView, entry) => {
-        console.log(inView ? "Solution" : "Home");
+        // console.log(inView ? "Solution" : "Home");
         props.onChangeLinkSet(inView ? "Product" : "");
       }}
       // threshold=".2"

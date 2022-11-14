@@ -18,7 +18,7 @@ function Testimonials(props) {
     <InView
       as="div"
       onChange={(inView, entry) => {
-        console.log(inView, entry);
+        // console.log(inView, entry);
         props.onChangeLinkSet(inView ? "Testimonial" : "Home");
       }}
       id="Testimonial"

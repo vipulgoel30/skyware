@@ -4,7 +4,7 @@ import LoginSignupModal from "./LoginSignupModal";
 function LoginHandler() {
   const [formVisibility, setFormVisibility] = useState(false);
   function changeFormVisibilityHandler() {
-    console.log(formVisibility);
+    // console.log(formVisibility);
     setFormVisibility((prevState) => !prevState);
   }
   return (

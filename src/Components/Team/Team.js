@@ -69,7 +69,7 @@ const team = {
 };
 
 export default function Team() {
-  console.log(team);
+  //   console.log(team);
   return (
     <>
       {" "}

@@ -6,7 +6,7 @@ function NavBarSmallScreen(props) {
   const [navState, setNavState] = useState(false);
   function navStateHandler() {
     setNavState((prevState) => !prevState);
-    console.log("chnaged");
+    // console.log("chnaged");
   }
   // console.log(navState);
 

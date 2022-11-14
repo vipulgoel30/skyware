@@ -21,7 +21,7 @@ function About(props) {
     <InView
       as="div"
       onChange={(inView, entry) => {
-        console.log(inView, entry);
+        // console.log(inView, entry);
         props.onChangeLinkSet(inView ? "About Us" : "");
       }}
       id="About Us"

@@ -27,7 +27,7 @@ function SignUpForm(props) {
     setName(event.target.value);
   }
   function passwordValueChangeHandler(event) {
-    console.log("Event triggered");
+    // console.log("Event triggered");
     setPassword(event.target.value);
   }
 

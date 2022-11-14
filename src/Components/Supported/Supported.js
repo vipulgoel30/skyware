@@ -58,7 +58,7 @@ function Supported(props) {
       <InView
         as="div"
         onChange={(inView, entry) => {
-          console.log(inView, entry);
+          // console.log(inView, entry);
           props.onChangeLinkSet(inView ? "Supported By" : "Home");
         }}
         id="Supported By"

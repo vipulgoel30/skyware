@@ -23,7 +23,7 @@ function Laurels(props) {
       <InView
         as="div"
         onChange={(inView, entry) => {
-          console.log(inView, entry);
+          // console.log(inView, entry);
           props.onChangeLinkSet(inView ? "Laurels" : "");
         }}
         id="Laurels"

@@ -31,7 +31,7 @@ function Contact(props) {
     <InView
       as="div"
       onChange={(inView, entry) => {
-        console.log(inView, entry);
+        // console.log(inView, entry);
         props.onChangeLinkSet(inView ? "Contact Us" : "Home");
       }}
       id="Contact Us"
