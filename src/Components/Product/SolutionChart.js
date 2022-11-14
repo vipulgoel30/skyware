@@ -2,6 +2,7 @@ import SkywareLogoSquare from "../../Images/SkywareLogoSquare.webp";
 import SolutionOneImage from "../../Images/solutionOne.webp";
 import SolutionTwoImage from "../../Images/SolutionTwo.webp";
 import SolutionThreeImage from "../../Images/SolutionThree.webp";
+import SolutionFourImage from "../../Images/SolutionFour.png";
 import SolutionFiveImage from "../../Images/SolutionFIve.webp";
 import SolutionSixImage from "../../Images/SolutionSix.webp";
 import SolutionChartItem from "./SolutionChartItem";
