@@ -26,7 +26,8 @@ function App() {
 
   useEffect(() => {
     setTimeout(() => {
-      setLoaderState((prevState) => !prevState);
+      window.scrollTo({ top: 0 })
+      setLoaderState(false);
     }, 1000);
   }, [])
   // for the small screen nav Bar
