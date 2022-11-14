@@ -75,18 +75,18 @@ export default function Career() {
 
   return (
     <div className="flex flex-col items-center gap-y-16 mb-16">
-      <div className="relative">
+      <div className="relative ">
         <img
           loading="eager"
           src="/images/career.webp"
           alt=""
-          className="w-screen aspect-[1.25] sm:aspect-video"
+          className="w-screen aspect-[.9] sm:aspect-video"
         />
         <div className="absolute inset-0 bg-white bg-opacity-40 z-10">
           <div className="absolute top-3 left-4">
-            <img src={SkywareLogo} className="w-48 h-12"></img>
+            <img src={SkywareLogo} className="w-48 h-12 "></img>
           </div>
-          <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 space-y-8">
+          <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 space-y-8 pt-14">
             <h2 className="font-bold text-xl sm:text-2xl md:text-3xl lg:text-4xl">
               Get Jobs
             </h2>

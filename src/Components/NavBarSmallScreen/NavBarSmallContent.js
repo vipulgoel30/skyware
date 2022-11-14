@@ -23,7 +23,7 @@ function NavBarSmallContent(props) {
             navStateSmallChanger={props.navStateSmallChanger}
           />
           <NavBarSmallContentHref
-            content={"About"}
+            content={"About Us"}
             navStateSmallChanger={props.navStateSmallChanger}
           />
           <NavBarSmallContentHref

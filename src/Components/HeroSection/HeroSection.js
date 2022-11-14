@@ -40,7 +40,7 @@ function HeroSection() {
               possible for grains stored in your{" "}
               <TagsElement data="agri-warehouses." color="orange" />
             </p>
-            <a href="#navbarsecondary">
+            <a href="#About Us">
               <button className="shadow-xl bg-slate-100 text-2xl  px-6 py-3 rounded-3xl  transition-all duration-500 hover:-translate-y-1 hover:scale-[1.01] hover:shadow-2xl active:shadow-lg active:scale-95 active:translate-y-1  ">
                 Learn More
               </button>
