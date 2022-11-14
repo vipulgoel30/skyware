@@ -80,7 +80,7 @@ function Supported(props) {
             onClick={previousScroll}
           />
           <div className=" w-[50%] sm:w-[40%] md-w[30%] -mr-[100px] sm:-mr-[90px] bg-white md:-mr-[60px] lg:mr-0 opacity-30 xsm:opacity-50 sm:opacity-70 md:opacity-90 shadow-[2px_2px_32px_rgba(0,0,0,.2)]  rounded-xl relative min-h-[16rem] h-fit   flex items-center justify-center px-2 hover:scale-[1.03] transition-all duration-500">
-            <img
+            <img loading="eager"
               src={data[previous]?.url}
               className="w-12 h-12 xsm:w-16 xsm:h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 rounded-full absolute top-0 -translate-x-1/2 -translate-y-1/2 left-1/2 shadow-2xl"
             ></img>
@@ -89,7 +89,7 @@ function Supported(props) {
             </p>
           </div>
           <div className="w-[90%] sm:w-[50%] md-w[40%]  rounded-xl relative z-[1] bg-white shadow-[2px_2px_32px_rgba(0,0,0,.4)] flex items-center justify-center  px-2 xsm:px-4 min-h-[18rem] hover:scale-[1.03] transition-all duration-500">
-            <img
+            <img loading="eager"
               src={data[current]?.url}
               className="w-16 h-16 xsm:w-20 xsm:h-20 sm:w-28 sm:h-28 md:w-32 md:h-32 rounded-full absolute top-0 -translate-x-1/2 -translate-y-1/2 left-1/2 shadow-2xl"
             ></img>
@@ -98,7 +98,7 @@ function Supported(props) {
             </p>
           </div>
           <div className="w-[50%] sm:w-[40%] md-w[30%] -ml-[100px] sm:-ml-[90px] bg-white md:-ml-[60px] lg:ml-0 opacity-30 xsm:opacity-50 sm:opacity-70 md:opacity-90 -z-[0]  rounded-xl relative shadow-[2px_2px_32px_rgba(0,0,0,.2)] flex items-center  justify-center px-2 min-h-[16rem] hover:scale-[1.03] transition-all duration-500">
-            <img
+            <img loading="eager"
               src={data[next]?.url}
               className="w-12 h-12 xsm:w-16 xsm:h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 rounded-full absolute top-0 -translate-x-1/2 -translate-y-1/2 left-1/2 shadow-2xl"
             ></img>

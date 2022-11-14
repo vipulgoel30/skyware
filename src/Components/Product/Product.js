@@ -47,7 +47,7 @@ function Product(props) {
           <GrNext className="animate-[productArrow_1s_ease-in-out_infinite_.4s] text-[#555] rotate-90 md:rotate-0" />
           <GrNext className="animate-[productArrow_1s_ease-in-out_infinite_.6s] text-[#555] rotate-90 md:rotate-0" />
         </div>
-        <img src={consoleImage} className="w-2/3 h-1/3 md:w-1/3 "></img>
+        <img loading="eager" src={consoleImage} className="w-2/3 h-1/3 md:w-1/3 "></img>
       </div>
       <SolutionChart />
     </InView>

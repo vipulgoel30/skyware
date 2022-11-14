@@ -11,7 +11,7 @@ function NavBarSmallContent(props) {
         className="fixed top-0 w-screen z-[5] bg-white flex justify-center py-3 shadow-md "
         data-aos="fade-down"
       >
-        <img src={SkywareLogo} className="w-32 h-8"></img>
+        <img loading="eager" src={SkywareLogo} className="w-32 h-8"></img>
       </div>
       <div
         className="fixed z-[2] top-0 w-full bg-white py-24  min-h-screen h-screen overflow-y-scroll "

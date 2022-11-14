@@ -45,18 +45,18 @@ function Laurels(props) {
         <div className="w-screen flex justify-center my-24 px-10">
           <div className="w-fit max-w-5xl grid  grid-cols-1 grid-rows-3 xsm:grid-cols-2 xsm:grid-rows-2 md:grid-cols-3 md:grid-rows-1 gap-12 ">
             <div className="w-fit  h-full px-4 text-center py-10 shadow-[2px_2px_10px_2px_rgba(255,0,0,.4)] lato  ">
-              <img src={together} className="h-28 w-full mb-8"></img>
+              <img loading="eager" src={together} className="h-28 w-full mb-8"></img>
               One of the top 6 finalists at the Together 2022 Entrepreneurial
               Bootcamp.
             </div>
             <div className="w-fit h-full px-4 text-center py-10 shadow-[2px_2px_10px_2px_rgba(0,255,0,.4)]   ">
-              <img src={startupWheel} className="h-28 w-full mb-8"></img>
+              <img loading="eager" src={startupWheel} className="h-28 w-full mb-8"></img>
               We are recognised in the top 50 international startups under the
               BSSC Startup Wheel Competition in Vietnam.
             </div>
             <div className="w-fit xsm:w-1/2 md:w-full text-center h-full px-4 py-10 shadow-[2px_2px_10px_2px_rgba(0,0,255,.4)]   col-span-1 justify-self-center xsm:col-span-2 md:col-span-1">
               <div classname="flex justify-center ">
-                <img src={summit} className="h-28 w-full mb-8"></img>
+                <img loading="eager" src={summit} className="h-28 w-full mb-8"></img>
                 We were awarded as the winner of i5 summit 2021, 7th edition of
                 India's largest entrepreneurship summit hosted by IIM Indore.
               </div>

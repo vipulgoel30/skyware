@@ -66,7 +66,7 @@ export default function Blog() {
             {allTags.map(tag => {
                 const selected = tag === selectedTag
                 return <li key={tag} className={`relative text-lg rounded-3xl cursor-pointer transition-all duration-300 px-4 py-1 font-medium text-white border-2 border-green-400 bg-green-400 ${selected ? 'pl-14' : 'hover:text-green-400 hover:bg-white'}`} onClick={() => setSelectedTag(tag)}>
-                    {selected && <img className='absolute top-1/2 -translate-y-1/2 left-4 h-3/5 aspect-square' alt="" src='/images/selected.svg' />}
+                    {selected && <img loading="eager" className='absolute top-1/2 -translate-y-1/2 left-4 h-3/5 aspect-square' alt="" src='/images/selected.svg' />}
                     {tag}
                 </li>
             })}
@@ -75,7 +75,7 @@ export default function Blog() {
             {blogs.map(({ title, desc, image, url, date, author, tags }, i) => <div key={i} className="flex flex-col px-8 py-4 rounded-xl shadow-xl w-full gap-6 border-[1.5px] hover:border-black" >
                 <a href={url} target="_blank" rel="noreferrer">
                     <div className="flex gap-6 items-center">
-                        <img alt={author?.name} src={author?.image || '/images/dummy.webp'} className="rounded-full w-16 h-16 border border-black" />
+                        <img loading="eager" alt={author?.name} src={author?.image || '/images/dummy.webp'} className="rounded-full w-16 h-16 border border-black" />
                         <div className="flex flex-col p-1 gap-.5">
                             <div className="text-2xl tracking-wider text-gray-800 font-extralight">
                                 {author?.name}
@@ -87,7 +87,7 @@ export default function Blog() {
                         </div>
                     </div>
                     <div className='mt-4'>
-                        <img alt='Blog' src={image} className="w-full h-64"></img>
+                        <img loading="eager" alt='Blog' src={image} className="w-full h-64"></img>
                     </div>
                 </a>
                 <ul className='gap-x-3 gap-y-2 flex flex-wrap'>

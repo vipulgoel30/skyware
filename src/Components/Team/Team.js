@@ -35,7 +35,7 @@ export default function Team() {
                     <div className="flex flex-wrap gap-8 w-11/12 mx-auto">
                         {team[field].map(({ name, title, links }, i) => <div key={i} className="mx-auto grid place-content-center text-center">
                             <div className="flex items-center justify-center relative bg-white w-44 aspect-square rounded-full overflow-hidden">
-                                <img src='/images/dummy.webp' alt="" />
+                                <img loading="eager" src='/images/dummy.webp' alt="" />
                                 {links && <div className="absolute inset-0 bg-black bg-opacity-25 opacity-0 hover:opacity-100 flex items-center justify-evenly gap-2 p-2 transition-all duration-300">
                                     {links.map((link, i) => link && <a key={i} href={link} target="_blank" rel="noreferrer">
                                         <span className={`grid place-content-center text-lg text-[#343434]/70 p-3 bg-white rounded-[50%] ${i ? 'hover:bg-blue-400' : 'hover:bg-blue-600'} hover:text-white transition-all duration-300`}>

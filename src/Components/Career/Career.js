@@ -72,7 +72,7 @@ export default function Career() {
     return (
         <div className='flex flex-col items-center gap-y-16 mb-16'>
             <div className='relative'>
-                <img src='/images/career.webp' alt='' className='w-screen aspect-[1.25] sm:aspect-video' />
+                <img loading="eager" src='/images/career.webp' alt='' className='w-screen aspect-[1.25] sm:aspect-video' />
                 <div className='absolute inset-0 bg-white bg-opacity-40 z-10'>
                     <div className='absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 space-y-8'>
                         <h2 className='font-bold text-xl sm:text-2xl md:text-3xl lg:text-4xl'>Get Jobs</h2>
@@ -99,7 +99,7 @@ export default function Career() {
                         {allTags.map(tag => {
                             const selected = tag === selectedTag
                             return <li key={tag} className={`relative text-lg rounded-3xl cursor-pointer transition-all duration-300 px-4 py-1 font-medium text-white border-2 border-green-400 bg-green-400 ${selected ? 'pl-14' : 'hover:text-green-400 hover:bg-white'}`} onClick={() => setSelectedTag(tag)}>
-                                {selected && <img className='absolute top-1/2 -translate-y-1/2 left-4 h-2/3 aspect-square' alt="" src='/images/selected.svg' />}
+                                {selected && <img loading="eager" className='absolute top-1/2 -translate-y-1/2 left-4 h-2/3 aspect-square' alt="" src='/images/selected.svg' />}
                                 {tag}
                             </li>
                         })}

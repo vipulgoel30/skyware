@@ -18,14 +18,14 @@ function SolutionChart() {
     //       }rem] left-[36%]  -translate-y-[50%] -rotate-5 flex gap-1 items-center justify-center flex-col`}
     //     >
     //       <div className=" montser text-xl ">Spoilage detection</div>
-    //       <img
+    //       <img loading="eager"
     //         src={SolutionOne}
     //         className="w-28 h-28 rounded-full  animate-[pulseShadow_2s_linear_infinite] border-4 border-[rgba(96,165,250,.5)]"
     //       ></img>
     //     </div>
     //     <div className="absolute bottom-0 left-1/3 -translate-x-1/2 translate-y-1/2 -rotate-5 flex gap-4 items-center justify-center ">
     //       <div className=" montser  text-xl w-40 pt-5">Activity Planner</div>
-    //       <img
+    //       <img loading="eager"
     //         src={SolutionOne}
     //         className="w-28 h-28 rounded-full animate-[pulseShadow_2s_linear_infinite] border-4 border-[rgba(96,165,250,.5)] "
     //       ></img>
@@ -34,7 +34,7 @@ function SolutionChart() {
     //       <div className=" montser  text-xl w-52 pt-8">
     //         Shelf life prediction
     //       </div>
-    //       <img
+    //       <img loading="eager"
     //         src={SolutionOne}
     //         className="w-28 h-28 rounded-full animate-[pulseShadow_2s_linear_infinite] border-4 border-[rgba(96,165,250,.5)]"
     //       ></img>
@@ -43,13 +43,13 @@ function SolutionChart() {
     //       <div className=" montser  text-xl w-52 pt-8 text-center">
     //         Commodity Health Score
     //       </div>
-    //       <img
+    //       <img loading="eager"
     //         src={SolutionOne}
     //         className="w-28 h-28 rounded-full animate-[pulseShadow_2s_linear_infinite] border-4 border-[rgba(96,165,250,.5)]"
     //       ></img>
     //     </div>
     //     <div className="absolute top-1/4 -right-4 translate-x-2/3 -translate-y-1/2 -rotate-5 flex gap-2">
-    //       <img
+    //       <img loading="eager"
     //         src={SolutionOne}
     //         className="w-28 h-28 rounded-full animate-[pulseShadow_2s_linear_infinite] border-4 border-[rgba(96,165,250,.5)]"
     //       ></img>
@@ -58,7 +58,7 @@ function SolutionChart() {
     //       </div>
     //     </div>
     //     <div className="absolute bottom-[27%] right-0 translate-x-2/3 translate-y-1/2 -rotate-5 flex gap-2">
-    //       <img
+    //       <img loading="eager"
     //         src={SolutionOne}
     //         className="w-28 h-28 rounded-full animate-[pulseShadow_2s_linear_infinite] border-4 border-[rgba(96,165,250,.5)]"
     //       ></img>

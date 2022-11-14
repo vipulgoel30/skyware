@@ -47,7 +47,7 @@ function HeroSection() {
             </a>
           </div>
           <div className=" w-full lg:w-2/5">
-            <img src={DashboardImage} className=""></img>
+            <img loading="eager" src={DashboardImage} className=""></img>
           </div>
         </div>
       </Background>

@@ -27,7 +27,7 @@ function SolutionChartItem(props) {
         </p>
       </div>
 
-      <img
+      <img loading="eager"
         src={props.image}
         className="w-20 h-20 xsm:w-24 xsm:h-24 sm:w-28 sm:h-28 rounded-full "
       ></img>

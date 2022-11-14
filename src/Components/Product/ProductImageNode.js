@@ -28,7 +28,7 @@ function ProductImageNode(props) {
       className={`absolute w-3/5 h-3/5  z-[${props.z}]   border-black border-[1px] hover:z-[5] hover:scale-110 transition-all duration-500 rounded-2xl overflow-hidden `}
     >
       <div className="relative w-full h-full overflow-hidden">
-        <img
+        <img loading="eager"
           src={props.image}
           className={`w-full h-full ${classBuild}img`}
           //   onMouseEnter={(event) => {

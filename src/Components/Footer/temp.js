@@ -14,7 +14,7 @@ function Footer() {
       <div className="w-fit flex flex-col gap-16">
         <div className="flex gap-2 sm:gap-8 md:gap-16  justify-evenly">
           <div className="flex flex-col  max-w-3xl ">
-            <img
+            <img loading="eager"
               src={SkywareLogo}
               className="w-32 h-8 md:w-54 md:h-12 mb-2 ml-4"
             ></img>

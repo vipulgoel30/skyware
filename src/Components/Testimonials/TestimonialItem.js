@@ -5,7 +5,7 @@ function TestimonialItem(props) {
         props.reverse ? "self-end" : "self-start"
       }`}
     >
-      <img
+      <img loading="eager"
         src={props.url}
         className="w-32 h-32 rounded-full skew-x-[0deg] navbar:skew-x-[10deg]"
       ></img>

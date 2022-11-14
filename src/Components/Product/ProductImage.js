@@ -29,18 +29,18 @@ function ProductImage() {
         image={Image3}
         name={"Node Side"}
       />
-      {/* <img
+      {/* <img loading="eager"
         src={Image1}
         className="absolute w-3/5 h-3/5 top-0 left-0 shadow-2xl border-black border-[.1px] shadow-green-200  z-[0] "
       ></img>
-      <img
+      <img loading="eager"
         src={Image2}
         className="absolute w-3/5 h-3/5 bottom-0 left-[20%] z-[4] shadow-2xl shadow-slate-700   border-black border-[.1px] "
       ></img>
       <div
         className={`bg-[url('')] absolute w-3/5 h-3/5 right-0 top-[10%] z-[2] shadow-2xl shadow-cyan-200 border-black border-[.1px]  hover:z-[5] transition-all hover:duration-500 hover:scale-105`}
       ></div> */}
-      {/* <img src={Image3} className=" "></img> */}
+      {/* <img loading="eager" src={Image3} className=" "></img> */}
     </div>
   );
 }
