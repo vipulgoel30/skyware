@@ -8,7 +8,13 @@ import { CacheableResponsePlugin } from 'workbox-cacheable-response'
 clientsClaim() // This should be at the top of the service worker
 self.skipWaiting()
 
-const urlsToCache = (self.__WB_MANIFEST || []).filter(({ url }) => url !== '/manifest.json')
+const revision = `${Date.now()}`
+const urlsToCache = (self.__WB_MANIFEST || []).concat([
+    { url: '/', revision },
+    { url: '/blogs', revision },
+    { url: '/careers', revision },
+    { url: '/team', revision }
+]).filter(({ url }) => url !== '/manifest.json')
 precacheAndRoute(urlsToCache)
 
 setDefaultHandler(new CacheFirst())
