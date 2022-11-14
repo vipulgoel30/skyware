@@ -1,6 +1,6 @@
 import { InView } from "react-intersection-observer";
 import styled from "styled-components";
-import AboutSectionImage from "../../Images/AboutSection.jpg";
+import AboutSectionImage from "../../Images/AboutSection.webp";
 // import AboutImage from "../Product/AboutImage";
 // import AboutImageNode from "./AboutImageNode";
 function About(props) {

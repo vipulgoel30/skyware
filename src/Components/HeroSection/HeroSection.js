@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
-// import HeroSectionImage from "../../Images/HeroSectionImage.jpg";
+// import HeroSectionImage from "../../Images/HeroSectionImage.webp";
 import NavBar from "../NavBarPrimary/NavBar";
 import HeroSectionTagLine from "./HeroSectionTagLine";
 import TagsElement from "./TagsElement";
 import TagsMain from "./TagsMain";
-import DashboardImage from "../../Images/DashboardImage.png";
+import DashboardImage from "../../Images/DashboardImage.webp";
 import { Link } from "react-router-dom";
 function HeroSection() {
   const Background = styled.div`

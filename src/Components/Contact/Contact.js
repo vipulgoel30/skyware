@@ -1,6 +1,6 @@
 import { InView } from "react-intersection-observer";
-import contactUsImage from "../../Images/ContactFour.jpg";
-import patternImage from "../../Images/PatternTwo.jpg";
+import contactUsImage from "../../Images/ContactFour.webp";
+import patternImage from "../../Images/PatternTwo.webp";
 import styled from "styled-components";
 import InputLayout from "../Login/InputLayout";
 // import Footer from "../Footer/Footer";

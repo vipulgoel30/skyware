@@ -1,4 +1,4 @@
-import loaderImage from "../Images/loaderLogo.png";
+import loaderImage from "../Images/loaderLogo.webp";
 function Loader() {
   return (
     <div className="w-screen h-screen flex flex-col gap-16 justify-center items-center bg-white absolute top-0 left-0 z-50">

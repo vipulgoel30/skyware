@@ -1,7 +1,7 @@
 import { InView } from "react-intersection-observer";
 import ProductImage from "./ProductImage";
 import SolutionChart from "./SolutionChart";
-import consoleImage from "../../Images/consoleImage.png";
+import consoleImage from "../../Images/consoleImage.webp";
 import { GrNext } from "react-icons/gr";
 function Product(props) {
   const options = {

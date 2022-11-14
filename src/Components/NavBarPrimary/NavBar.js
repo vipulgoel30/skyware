@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import skywareLogo from "../../Images/SkywareLogo.png";
+import skywareLogo from "../../Images/SkywareLogo.webp";
 // import LoginButton from "../Login/LoginButton";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import NavBarLink from "./NavBarLink";

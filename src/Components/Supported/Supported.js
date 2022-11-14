@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { InView } from "react-intersection-observer";
-import AboutSection from "../../Images/AboutSection.jpg";
 import { GrPrevious, GrNext } from "react-icons/gr";
 function Supported(props) {
   const data = [

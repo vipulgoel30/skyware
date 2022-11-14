@@ -1,4 +1,4 @@
-import SkywareLogo from "../../Images/SkywareLogo.png";
+import SkywareLogo from "../../Images/SkywareLogo.webp";
 import { AiOutlineHome } from "react-icons/ai";
 import { SiAboutdotme } from "react-icons/si";
 // import NavBarSmallContentItem from "./NavBarSmallContentHref";

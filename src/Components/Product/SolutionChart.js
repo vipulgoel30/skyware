@@ -1,9 +1,9 @@
-import SkywareLogoSquare from "../../Images/SkywareLogoSquare.png";
-import SolutionOneImage from "../../Images/solutionOne.jpg";
-import SolutionTwoImage from "../../Images/SolutionTwo.jpg";
-import SolutionThreeImage from "../../Images/SolutionThree.jpg";
-import SolutionFiveImage from "../../Images/SolutionFIve.jpg";
-import SolutionSixImage from "../../Images/SolutionSix.png";
+import SkywareLogoSquare from "../../Images/SkywareLogoSquare.webp";
+import SolutionOneImage from "../../Images/solutionOne.webp";
+import SolutionTwoImage from "../../Images/SolutionTwo.webp";
+import SolutionThreeImage from "../../Images/SolutionThree.webp";
+import SolutionFiveImage from "../../Images/SolutionFIve.webp";
+import SolutionSixImage from "../../Images/SolutionSix.webp";
 import SolutionChartItem from "./SolutionChartItem";
 function SolutionChart() {
   return (

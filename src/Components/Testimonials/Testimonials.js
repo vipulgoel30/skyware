@@ -1,6 +1,6 @@
 import { InView } from "react-intersection-observer";
 import styled from "styled-components";
-import TestimonialImage from "../../Images/Testimonial.jpg";
+import TestimonialImage from "../../Images/Testimonial.webp";
 import TestimonialItem from "./TestimonialItem";
 function Testimonials(props) {
   const Background = styled.div`

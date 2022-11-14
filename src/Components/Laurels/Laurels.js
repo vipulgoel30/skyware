@@ -1,8 +1,8 @@
 import styled from "styled-components";
-import LaurelsImage from "../../Images/LaurelsImage.jpg";
-import summit from "../../Images/summit.png";
-import together from "../../Images/together.png";
-import startupWheel from "../../Images/startupwheel.jpg";
+import LaurelsImage from "../../Images/LaurelsImage.webp";
+import summit from "../../Images/summit.webp";
+import together from "../../Images/together.webp";
+import startupWheel from "../../Images/startupwheel.webp";
 import { InView } from "react-intersection-observer";
 function Laurels(props) {
   const LaurelsBackground = styled.div`

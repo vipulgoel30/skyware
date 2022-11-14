@@ -24,12 +24,9 @@ AOS.init({
 function App() {
   const [loaderState, setLoaderState] = useState(true);
 
-  function changeLoaderState() {
-    setTimeout(() => {
-      setLoaderState((prevState) => !prevState);
-    }, 1000);
-  }
-  changeLoaderState();
+  setTimeout(() => {
+    setLoaderState((prevState) => !prevState);
+  }, 1000);
   // for the small screen nav Bar
   // const [navState, setNavState] = useState(false);
   // function navStateSmallHandler() {

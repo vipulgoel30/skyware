@@ -1,6 +1,6 @@
-import Image1 from "../../Images/Node.jpeg";
-import Image2 from "../../Images/HubImage.jpeg";
-import Image3 from "../../Images/NodeSide.jpeg";
+import Image1 from "../../Images/Node.webp";
+import Image2 from "../../Images/HubImage.webp";
+import Image3 from "../../Images/NodeSide.webp";
 import ProductImageNode from "./ProductImageNode";
 function ProductImage() {
   return (

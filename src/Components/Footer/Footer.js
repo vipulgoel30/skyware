@@ -1,4 +1,4 @@
-import SkywareLogo from "../../Images/SkywareLogo.png";
+import SkywareLogo from "../../Images/SkywareLogo.webp";
 import { FaLocationArrow } from "react-icons/fa";
 import { MdOutlineCall } from "react-icons/md";
 import { CiMail } from "react-icons/ci";
