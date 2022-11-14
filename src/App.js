@@ -15,16 +15,17 @@ import "aos/dist/aos.css"; // You can also use <link> for styles
 import Blog from "./Components/Blog/Blog";
 import Career from "./Components/Career/Career";
 import Team from "./Components/Team/Team";
+import AboutImage from "./Components/About/AboutImage";
 
 AOS.init({
   once: true,
 });
 function App() {
   // for the small screen nav Bar
-  const [navState, setNavState] = useState(false);
-  function navStateSmallHandler() {
-    setNavState((prevState) => !prevState);
-  }
+  // const [navState, setNavState] = useState(false);
+  // function navStateSmallHandler() {
+  //   setNavState((prevState) => !prevState);
+  // }
 
   return (
     <>
@@ -34,14 +35,12 @@ function App() {
           path="/"
           element={
             <>
-              <div className={`${navState ? "hidden" : ""} navbar:block`}>
-                <HeroSection />
-                <MainSection />
-              </div>
-              {/* <NavBarSmallScreen
-                navStateSmallChanger={navStateSmallHandler}
-                state={navState}
-              /> */}
+              <NavBarSmallScreen />
+              {/* <div className={`${navState ? "hidden" : ""} navbar:block`}> */}
+              <HeroSection />
+              <MainSection />
+              {/* <AboutImage /> */}
+              {/* </div> */}
             </>
           }
         />

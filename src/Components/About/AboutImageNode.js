@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import styled from "styled-components";
 
 function AboutImageNode(props) {
-  const classBuild = props.name.split(" ").join("");
+  const classBuild = props.name?.split(" ").join("");
   const ImageComponent = styled.div`
     top: ${props.top};
     bottom: ${props.bottom};

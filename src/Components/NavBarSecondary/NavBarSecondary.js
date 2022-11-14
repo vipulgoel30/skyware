@@ -32,13 +32,13 @@ function NavBarSecondary(props) {
         currentLink={props.currentLink}
       />
       <NavBarSecondaryItem
-        name="Supported By"
-        destination="Supported By"
+        name="Testimonial"
+        destination="Testimonial"
         currentLink={props.currentLink}
       />
       <NavBarSecondaryItem
-        name="Testimonial"
-        destination=""
+        name="Supported By"
+        destination="Supported By"
         currentLink={props.currentLink}
       />
 

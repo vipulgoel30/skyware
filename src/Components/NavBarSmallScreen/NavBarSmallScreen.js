@@ -1,19 +1,24 @@
 import React, { useState } from "react";
-import NavBarSmall from "./NavBarSmallContent";
+import NavBarSmallContent from "./NavBarSmallContent";
 import NavBarSmallScreenButton from "./NavBarSmallScreenButton";
 
 function NavBarSmallScreen(props) {
-  //   const [navState, setNavState] = useState(false);
-  //   function navStateHandler() {
-  //     setNavState((prevState) => !prevState);
-  //   }
+  const [navState, setNavState] = useState(false);
+  function navStateHandler() {
+    setNavState((prevState) => !prevState);
+    console.log("chnaged");
+  }
+  // console.log(navState);
+
   return (
     <>
-      <NavBarSmall state={props.state} />
+      {navState && (
+        <NavBarSmallContent navStateSmallChanger={navStateHandler} />
+      )}
 
       <NavBarSmallScreenButton
-        navStateSmallChanger={props.navStateSmallChanger}
-        state={props.state}
+        navStateSmallChanger={navStateHandler}
+        navState={navState}
       ></NavBarSmallScreenButton>
     </>
   );

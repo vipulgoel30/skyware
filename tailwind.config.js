@@ -7,11 +7,18 @@ module.exports = {
         primary: "#60a5fa",
         secondary: "#60a5fa",
       },
+      keyframes: {
+        pulseShadow: {
+          "50%": {
+            boxShadow: "0px 0px 5px 5px rgba(0,0,0,.2)",
+          },
+        },
+      },
     },
     screens: {
       xsm: "420px",
       sm: "640px",
-      navbar: "850px",
+      navbar: "680px",
       md: "768px",
       lg: "1024px",
       xl: "1280px",

@@ -12,7 +12,7 @@ function Footer() {
   return (
     <div className="w-screen  h-fit py-12 px-4 bg-[#0a2a38] shadow-2xl flex flex-col  items-center text-white overflow-hidden">
       <div className="w-fit flex flex-col gap-16">
-        <div className="flex gap-3 justify-evenly">
+        <div className="flex gap-2 sm:gap-8 md:gap-16  justify-evenly">
           <div className="flex flex-col  max-w-3xl ">
             <img
               src={SkywareLogo}
@@ -42,7 +42,7 @@ function Footer() {
             </a>
           </div>
           <div className="flex flex-col gap-3 max-w-3xl ">
-            <h1 className="montser  opacity-90 uppercase text-lg md:text-xl mb-2 tracking-widest font-semibold">
+            <h1 className="montser  opacity-90 uppercase text-base md:text-xl mb-2 tracking-widest font-semibold">
               Products
             </h1>
 

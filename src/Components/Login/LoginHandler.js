@@ -10,7 +10,7 @@ function LoginHandler() {
   return (
     <>
       <button
-        className="rounded-lg z-100 border-2 bg-blue-400  text-[#fff] hover:border-blue-400 hover:text-blue-400 hover:bg-transparent roboto  px-5 py-[.3rem] text-md uppercase tracking-widest  duration-500 
+        className=" rounded-lg z-100 border-2 bg-blue-400  text-[#fff] hover:border-blue-400 hover:text-blue-400 hover:bg-white roboto  px-5 py-[.3rem] text-sm md:text-base lg:text-lg uppercase tracking-widest  duration-500 
        
   "
         onClick={changeFormVisibilityHandler}
