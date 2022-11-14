@@ -28,7 +28,7 @@ function Product(props) {
           </h1>
           <span className="w-12 h-1 bg-[#333] sm:w-16 md:w-20"></span>
         </div>
-        <p className="text-xl max-w-4xl text-center mx-auto dosis  leading-relaxed tracking-wider ">
+        <p className="text-xl max-w-4xl text-center mx-auto dosis  leading-relaxed tracking-wider px-4 ">
           <span className="italic font-semibold">SKYWARE</span> aspires to trim
           down these massive losses through IoT and AI-enabled scientific
           storage systems that forecast spoilage using real-time data modeling

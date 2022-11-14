@@ -14,6 +14,24 @@ module.exports = {
             color: "#000",
           },
         },
+        logoLoader: {
+          " 50%": {
+            rotate: "360deg",
+            opacity: "1",
+          },
+          "60%": {
+            scale: "1.2",
+            opacity: ".8",
+          },
+          "80%": {
+            scale: ".8",
+            opacity: ".6",
+          },
+          "100%": {
+            scale: "1",
+            opacity: "0",
+          },
+        },
       },
     },
     screens: {

@@ -15,12 +15,21 @@ import "aos/dist/aos.css"; // You can also use <link> for styles
 import Blog from "./Components/Blog/Blog";
 import Career from "./Components/Career/Career";
 import Team from "./Components/Team/Team";
+import Loader from "./Components/Loader";
 // import AboutImage from "./Components/About/AboutImage";
 
 AOS.init({
   once: true,
 });
 function App() {
+  const [loaderState, setLoaderState] = useState(true);
+
+  function changeLoaderState() {
+    setTimeout(() => {
+      setLoaderState((prevState) => !prevState);
+    }, 1000);
+  }
+  changeLoaderState();
   // for the small screen nav Bar
   // const [navState, setNavState] = useState(false);
   // function navStateSmallHandler() {
@@ -30,6 +39,7 @@ function App() {
   return (
     <>
       <NavBar />
+      {loaderState && <Loader />}
       <Routes>
         <Route
           path="/"

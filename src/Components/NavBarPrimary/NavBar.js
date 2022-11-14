@@ -10,8 +10,9 @@ function NavBar() {
 
   return (
     <div
-      className={` w-screen flex items-center ${window.location.pathname === "/" && "bg-purple-100"
-        } justify-between py-1  px-3 sm:px-6  lg:px-8 gap-5   `}
+      className={` w-screen flex items-center ${
+        window.location.pathname === "/" && "bg-purple-100"
+      } justify-between py-1  px-3 sm:px-6  lg:px-8 gap-5   `}
     >
       <img
         src={skywareLogo}
@@ -21,8 +22,8 @@ function NavBar() {
       <div className="flex gap-6 lg:gap-8 items-baseline justify-between">
         <div className="hidden navbar:flex gap-4 items-center">
           {window.location.pathname !== "/" && <NavBarLink name="Home" />}
-          <NavBarLink name="Career" address="careers" />
-          <NavBarLink name="Blog" address="blogs" />
+          <NavBarLink name="Career" address="careers" target="true" />
+          <NavBarLink name="Blog" address="blogs" target="true" />
           <NavBarLink name="Contact Us" />
         </div>
         <LoginHandler />

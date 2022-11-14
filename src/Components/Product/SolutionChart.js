@@ -1,6 +1,9 @@
 import SkywareLogoSquare from "../../Images/SkywareLogoSquare.png";
 import SolutionOneImage from "../../Images/solutionOne.jpg";
-import SolutionTwo from "../../Images/SolutionTwo.jpg";
+import SolutionTwoImage from "../../Images/SolutionTwo.jpg";
+import SolutionThreeImage from "../../Images/SolutionThree.jpg";
+import SolutionFiveImage from "../../Images/SolutionFIve.jpg";
+import SolutionSixImage from "../../Images/SolutionSix.png";
 import SolutionChartItem from "./SolutionChartItem";
 function SolutionChart() {
   return (
@@ -90,7 +93,7 @@ function SolutionChart() {
         title="Shelf-Life Prediction"
         contentStart="our systems analyse  "
         contentEnd="numerous parameters to predict shelf life and suggest ways of maximising it"
-        image={SolutionTwo}
+        image={SolutionTwoImage}
       />
       <SolutionChartItem
         colorOne="#c8054b"
@@ -98,7 +101,7 @@ function SolutionChart() {
         title="Commodity Health Score"
         contentStart="a score that tells "
         contentEnd="you how long your commodity will survive "
-        image={SolutionOneImage}
+        image={SolutionThreeImage}
       />
       <SolutionChartItem
         colorOne="#ffde59"
@@ -114,7 +117,7 @@ function SolutionChart() {
         title="24*7 Remote Access"
         contentStart="our Mobile Software "
         contentEnd="gives Remote Access to the warehouse. it digitalise many activities"
-        image={SolutionOneImage}
+        image={SolutionFiveImage}
       />
       <SolutionChartItem
         colorOne="#630f31"
@@ -122,7 +125,7 @@ function SolutionChart() {
         title="Theft Alert"
         contentStart="motion sensing technology "
         contentEnd="incorporated in our devices makes your warehouse an anti-Theft facility"
-        image={SolutionOneImage}
+        image={SolutionSixImage}
       />
     </div>
   );

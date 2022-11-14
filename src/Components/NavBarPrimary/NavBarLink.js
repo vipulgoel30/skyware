@@ -4,6 +4,7 @@ function NavBarLink(props) {
   return (
     <a
       href={`/${props.address || `#${props.name}`}`}
+      target={`${props.target ? "_blank" : ""}`}
       className="hover:text-transparent hover:bg-gradient-to-r roboto  text-black text-lg tracking-widest hover:from-primary hover:to-secondary hover:bg-clip-text hover:scale-105 transition-all duration-300 active:scale-95"
     >
       {props.name}
